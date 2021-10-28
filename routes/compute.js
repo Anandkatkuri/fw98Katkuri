@@ -11,9 +11,9 @@ router.get('/', function(req, res, next) {
     //console.log(Number(search_params.get("x"))+"hello")
     if(storeValue == 0)
     storeValue=Math.random()
-    res.write("Computes the values for Math.acos and Math.abs function."+"\n")
-    res.write('Math.acos applied to '+storeValue+" is "+Math.cos(storeValue)+"\n");
-    res.end('Math.abs applied to '+storeValue+" is "+Math.asin(storeValue));
+    res.write("Computes the values for Math.log2 and Math.cosh function."+"\n")
+    res.write('Math.acos applied to '+storeValue+" is "+Math.log2(storeValue)+"\n");
+    res.end('Math.cosh applied to '+storeValue+" is "+Math.cosh(storeValue));
  });
 
 module.exports = router;
