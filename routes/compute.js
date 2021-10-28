@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
     if(storeValue == 0)
     storeValue=Math.random()
     res.write("Computes the values for Math.log2 and Math.cosh function."+"\n")
-    res.write('Math.acos applied to '+storeValue+" is "+Math.log2(storeValue)+"\n");
+    res.write('Math.log2 applied to '+storeValue+" is "+Math.log2(storeValue)+"\n");
     res.end('Math.cosh applied to '+storeValue+" is "+Math.cosh(storeValue));
  });
 
